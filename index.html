@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>英雄联盟全新官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="shortcut icon" href="images/ico.jpg" />
+    <style>
+        .box{
+
+            width: 1240px;
+            height: 300px;
+            margin-top: 550px;
+            margin-left: 60px;
+        }
+        .box ul{
+            z-index: 9999;
+            height: 30px;
+        }
+        /*.box ul li{*/
+            /*z-index: 9999;*/
+            /*width: 150px;*/
+            /*height: 30px;*/
+            /*line-height: 30px;*/
+            /*text-align: center;*/
+            /*float: left;*/
+            /*background:lightblue ;*/
+        /*}*/
+        .box div{
+            width: 100%;
+            height: 270px;
+            line-height: 270px;
+            text-align: center;
+            display: none;
+            margin-top:60px;
+        }
+        .box div.show{
+            display: block;
+            /*background:lightcoral;*/
+        }
+        .box-nav{
+            width: 1240px;
+            height: 90px;
+        }
+        .box-nav li{
+            float: left;
+        }
+        .box-nav li a{
+            width: 200px;
+            height: 90px;
+            background-color: #FEFEFE;
+            display: block;
+            line-height: 90px;
+            font-size: 18px;
+            font-family: '微软雅黑';
+        }
+        .box-nav li a:hover{
+            color: #D7B770;
+            text-decoration: underline;
+        }
+
+
+        .bo{
+            width: 453px;
+            height: 300px;
+            position: absolute;
+            top: 5px;
+            right: -400px;
+        }
+        .bo ul{
+            height: 30px;
+        }
+        .bo ul li{
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+        }
+        .bo ul li+li{
+        }
+        .bo ul li.on{
+        }
+        .bo div{
+            width: 100%;
+            text-align: center;
+            display: none;
+            margin-top: 20px;
+        }
+        .bo div.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="logo">
+        <a href="http://lol.qq.com/"><img src="images/logo.png" alt=""/></a>
+    </div>
+    <div class="top-nav" id="father">
+        <ul>
+            <li><a href="http://lol.qq.com/web201310/info-heros.shtml"><span class="a">游戏资料</span><br><span class="b">GAME INFO</span></a></li>
+            <li><a href="javaScript:;"><span class="c a">商城/合作</span><br><span class="b">STORE</span></a></li>
+            <li><a href="javaScript:;"><span class="c a">用户互动</span><br><span class="b">COMMUNITY</span></a></li>
+            <li><a href="http://lpl.qq.com/"><span class="a">赛事中心</span><br><span class="b">EVENTS</span></a></li>
+            <li><a href="javaScript:;"><span class="c a">自助系统</span><br><span class="b">STYSTEM</span></a></li>
+        </ul>
+        <div class="son" id="son">
+            <table width="630px" height="230px">
+                <tr align="center">
+                    <td><a href="javaScript:;">新手指引</a></td>
+                    <td><a href="javaScript:;">点券充值</a></td>
+                    <td><a href="javaScript:;">在线客服</a></td>
+                    <td><a href="javaScript:;"><span class="H">H</span>LPL职业联赛</a></td>
+                    <td><a href="javaScript:;">点亮图标</a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="javaScript:;"><span class="H">H</span>资料库</a></td>
+                    <td><a href="javaScript:;">道具城</a></td>
+                    <td><a href="javaScript:;">视频中心</a></td>
+                    <td><a href="javaScript:;">甲级职业联赛</a></td>
+                    <td><a href="javaScript:;">声望系统</a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="javaScript:;">攻略中心</a></td>
+                    <td><a href="javaScript:;">周边商城</a></td>
+                    <td><a href="javaScript:;"><span class="H">H</span>活动中心</a></td>
+                    <td><a href="javaScript:;">德玛西亚杯</a></td>
+                    <td><a href="javaScript:;"><span class="H">H</span>封号查询</a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="javaScript:;">模式实验室</a></td>
+                    <td><a href="javaScript:;">LOL桌游</a></td>
+                    <td><a href="javaScript:;">官方论坛</a></td>
+                    <td><a href="javaScript:;">城市争霸赛</a></td>
+                    <td><a href="javaScript:;">体验服申请</a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="javaScript:;">海克斯战利品库</a></td>
+                    <td><a href="javaScript:;">LOL信用卡</a></td>
+                    <td><a href="javaScript:;">官方微信</a></td>
+                    <td><a href="javaScript:;">高校联赛</a></td>
+                    <td><a href="javaScript:;">服务器状态查询</a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="javaScript:;">屏保下载</a></td>
+                    <td><a href="javaScript:;">网吧特权</a></td>
+                    <td><a href="javaScript:;">官方微博</a></td>
+                    <td><a href="javaScript:;">校际精英赛</a></td>
+                    <td><a href="javaScript:;">裁决之镰</a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="javaScript:;"><span class="N">N</span>宇宙官网</a></td>
+                    <td><a href="javaScript:;"></a></td>
+                    <td><a href="javaScript:;"></a></td>
+                    <td><a href="javaScript:;">高校自发赛</a></td>
+                    <td><a href="javaScript:;"><span class="N">N</span>峡谷之巅</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="user" id="father2">
+        <img src="images/userImg.png" alt="" class="xiang"/>
+        <span class="user-font">亲爱的召唤师,欢迎<a href="" style="text-decoration: underline;">登录</a><br><h5>登录后查看自己的战绩、资产、声望值</h5></span>
+        <div class="son2" id="son2">
+            <span>登录并且绑定大区后才可查看您的具体信息哦<br>~(包括战绩、资产、声望值等)</span>
+            <a href="javaScript:;">进入个人中心</a>
+        </div>
+    </div>
+    <div class="ss"><a href="javaScript:暂未开放,请敬请期待哦;"><img src="images/ss.png" alt="" title="前往英雄联盟搜索系统"/></a></div>
+    <div class="phone"><a href="http://lol.qq.com/app/"><img src="images/phone.png" alt="" title="前往掌上英雄联盟官网"/></a></div>
+    <div class="top-img">
+        <video src="images/big-v8.mp4"autoplay loop width="1384px" height="580px"></video>
+        <hr style="border: 2px solid #8C6C2D;" class="hr"/>
+        <span class="img-font">新英雄 凯隐</span>
+        <span class="img-font2">“让力量臣服意志，还是被它彻底吞噬"-影流之镰 抉择一念</span>
+        <a href=""><video src="images/small-v7.mp4"autoplay loop class="video"width="220" height="120"></video></a>
+        <div class="nn"><a href="http://lol.52pk.com/video/7003112_2.shtml"><img src="images/bo2.png" alt="" title="点击播放"/></a></div>
+        <a href="" class="top-a">查看详情</a>
+    </div>
+    <div class="ban">
+        <span>当前游戏版本 : </span><font class="var">Var 7.14</font><a href="javaScript:;">版本详情</a>
+    </div>
+</div>
+<div id="box1" class="box">
+    <ul class="box-nav">
+        <li><a href="javaScript:;">综合资讯</a></li>
+        <li class="on"><a href="javaScript:;">视频中心</a></li>
+        <li><a href="javaScript:;">赛事中心</a></li>
+        <li><a href="javaScript:;">活动中心</a></li>
+    </ul>
+    <div class="Yi"></div>
+    <div class="show">内容区2</div>
+    <div>内容区3</div>
+    <div>内容区4</div>
+
+</div>
+<div class="center">
+    <div id="box" class="b">
+        <div class="banner">
+            <div><a href="javaScript:;"><img src="images/nav-2.jpg" alt=""></a></div>
+            <div><a href="javaScript:;"><img src="images/nav-1.jpg" alt=""></a></div>
+            <div><a href="javaScript:;"><img src="images/nav-3.jpg" alt=""></a></div>
+            <div><a href="javaScript:;"><img src="images/nav-4.jpg" alt=""></a></div>
+            <div><a href="javaScript:;"><img src="images/nav-5.jpg" alt=""></a></div>
+        </div>
+        <ul>
+            <li class="on">无限火力英雄乱斗</li>
+            <li>无极剑圣斩星剑魔</li>
+            <li>LPL本周竞猜</li>
+            <li>影流之镰凯隐销售</li>
+            <li>condi再抢大龙翻盘</li>
+        </ul>
+        <a href="javaScript:;" class="btnL"></a>
+        <a href="javaScript:;" class="btnR"></a>
+
+    </div>
+    <script src="js/utils333.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/style.js"></script>
+    <div class="xzyx">
+        <a href="http://lol.qq.com/download.shtml?ADTAG=lolweb.v2"><video src="img2/down.mp4" autoplay  loop></video></a>
+    </div>
+    <div class="jing">
+        <ul>
+            <li><a href="">新手推荐<i class="two-a"></i></a></li>
+            <li><a href="">宇宙官网<span class="H">H</span><i class="two-b"></i></a></li>
+            <li><a href="">周边商城<i class="two-c"></i></a></li>
+            <li><a href="">新客户端<span class="N">N</span><i class="two-d"></i></a></li>
+            <li><a href="">峡谷之巅<span class="N">N</span><i class="two-e"></i></a></li>
+            <li><a href="">CDK兑换<i class="two-f"></i></a></li>
+            <li><a href="">轮换模式<span class="H h">H</span><i class="two-g"></i></a></li>
+            <li><a href="">游戏资料<i class="two-h"></i></a></li>
+            <li><a href="">领奖中心<i class="two-i"></i></a></li>
+            <li><a href="">官方微博<i class="two-j"></i></a></li>
+            <li><a href="">玩家论坛<i class="two-k"></i></a></li>
+            <li><a href="">在线客服<i class="two-l"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div class="center-b">
+    <span class="zuixin">最新资讯</span>
+    <!-- 选项卡-->
+    <div class="box1 demo3">
+
+        <ul class="tab_menu">
+
+            <li class="current"><a href="javaScript:;">综合新闻</a></li>
+
+            <li><a href="javaScript:;">官方公告</a></li>
+
+            <li><a href="javaScript:;">赛事新闻</a></li>
+
+            <li><a href="javaScript:;">论坛资讯</a></li>
+
+        </ul>
+
+        <div class="tab_box">
+
+            <div>
+
+                <ul>
+                    <a href="javaScript:;"><img src="images/pic-news8.jpg" alt=""/><span class="xiao"><font>中国高校，全胜夺得冠军！</font><br/>继LPL洲际赛夺冠后，中国大陆再次称霸全球高校</span></a>
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">英雄更新介绍:无畏战车  厄加特</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">掌盟移动商城悄然登场 爱上她的4个理由</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">LPL本周焦点MysticUzi下路相逢</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">周末福利大盘点</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">海克斯科技稀有宝石兑换半价</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">《英雄联盟》VR观赛首秀Chinajoy</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">符文重铸:符文相关的世界</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">教你一招:凯隐双形态连招细节解析</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">符文角:血月杀抢先看</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">新闻</span><span class="nei">"欧米卡小队"整装待发</span></a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="hide">
+
+                <ul>
+                    <a href="javaScript:;"><img src="images/pic-news4.jpg" alt=""/><span class="xiao"><font>8月7日赛服下载地址更新公告</font><br/>比赛服将于8月7日10点开始进行停机更新，更新后版本号为3.1.1.4，预计停机时长6小时（10<br>点-16点），更新内容为7.15版本</span></a>
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">拯救提莫！欧米伽小分队2017任务开启</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">海克斯稀有宝石兑换精美皮肤</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">电玩时代-解锁新英雄成就领取永久皮肤</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">黑暗&光明骑士系列皮肤限时折扣</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">8月4日免费英雄更换公告</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">"回放系统"正式上线公告</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">"回放系统"部分大区开启公告</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">8月1日凌晨5点版本停机更新公告</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">无限乱斗模式延长开放公告</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">公告</span><span class="nei">"回放系统"部分大区开启公告</span></a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="hide">
+
+                <ul>
+                    <a href="javaScript:;"><img src="images/pic-news8.jpg" alt=""/><span class="xiao"><font>LSPL第九周 : VG即将登顶常规赛</font><br/>收官大战即将开启，魔鬼赛程高潮不断</span></a>
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">Icon妖姬镜花水月斩双杀</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">LPL第八周最佳阵容 EDG强势占位</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">Smlz老鼠输出报表 OMG捍卫头名地位</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">KPYST4L韦鲁斯神走位斩获四杀</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">赛前无硝烟对决 RNG与JDG海报厮杀</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">Snake花式打DAN捍卫灵石路荣耀</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">中路火拼！8月6日小虎大战Doinb</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">TheShy兰博火烧三路IG横扫WE复仇</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">iBOY:队友太强了，不送就能赢</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">赛事</span><span class="nei">Coco飞机完美操作拿四杀</span></a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="hide">
+
+                <ul>
+                    <a href="javaScript:;"><img src="images/pic-news6.jpg" alt=""/><span class="xiao"><font>【问拳头第三十四期】五杀乐队</font><br/>本周五杀乐队代班问拳头哟！</span></a>
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">厂长又遭嘲讽？职业选手Cat怒刷4396</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">北美论坛 : 设计师透露或将重做狮子狗</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">凯隐和巨镰的宿命 够强大才不被吞噬</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">机器人新套路，每个英雄都可以穿墙</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">安妮诺手变篮球队友，WE上演东北二人转</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">【话题】王者回归邀请赛 微笑"复出"？</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">【话题】美测服 : 蛇女是加强还是削弱？</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">【话题】骑士归来断剑锐雯暴力教学</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">史上最强控制技能！追你到天涯海角</span></a></li>
+
+                    <li><a href="javaScript:;" ><span class="news">论坛</span><span class="nei">打电话系列表情包英雄版！快来抱走！</span></a></li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div id="bo" class="bo">
+            <ul>
+                <li class="on"><a href="">周免英雄</a></li>
+                <li><a href="">最新皮肤</a></li>
+                <li><a href="">最新英雄</a></li>
+            </ul>
+            <div class="show">
+                <a href=""><img src="images/1.png" title="星界游神" alt=""/></a>
+                <a href=""><img src="images/2.png" title="蒸汽机器人"alt=""/></a>
+                <a href=""><img src="images/3.png" title="暴走萝莉"alt=""/></a>
+                <a href=""><img src="images/4.png" title="影流之镰" alt=""/></a>
+                <a href=""><img src="images/5.png" title="赏金猎人" alt=""/></a>
+                <a href=""><img src="images/6.png" title="齐天大圣" alt=""/></a>
+                <a href=""><img src="images/7.png" title="堕落天使" alt=""/></a>
+                <a href=""><img src="images/8.png" title="深海泰坦" alt=""/></a>
+                <a href=""><img src="images/9.png" title="放逐之刃" alt=""/></a>
+                <a href=""><img src="images/10.png" title="影流之主" alt=""/></a>
+            </div>
+            <div>
+                <a href=""><img src="images/a20170703skt.jpg" alt=""/></a>
+                <a href=""><img src="images/11.png" title="黎明VS黑暗" alt=""/></a>
+                <a href=""><img src="images/12.png" title="未来战士" alt=""/></a>
+                <a href=""><img src="images/13.png" title="神拳"alt=""/></a>
+                <a href=""><img src="images/14.png" title="玩具大战系列" alt=""/></a>
+                <a href=""><img src="images/15.png" title="血月系列" alt=""/></a>
+                <a href=""><img src="images/16.png" title="灭世魔神系列" alt=""/></a>
+            </div>
+            <div>
+                <a href=""><img src="images/17.png" title="影流之镰" alt=""/></a>
+                <a href=""><img src="images/18.png" title="洛与霞" alt=""/></a>
+                <a href=""><img src="images/19.png" title="卡密尔"alt=""/></a>
+                <a href=""><img src="images/20.png" title="艾翁" alt=""/></a>
+                <a href=""><img src="images/21.png" title="暴怒骑士" alt=""/></a>
+                <a href=""><img src="images/22.png" title="塔利亚" alt=""/></a>
+                <a href=""><img src="images/23.png" title="奥瑞利安" alt=""/></a>
+                <a href=""><img src="images/24.png" title="戏命师" alt=""/></a>
+                <a href=""><img src="images/25.png" title="海兽祭司" alt=""/></a>
+                <a href=""><img src="images/26.png" title="永猎双子" alt=""/></a>
+            </div>
+        </div>
+        <div class="center-buttom">
+            <a href="javaScript:;"><img src="images/survey%20(1).jpg" alt=""/></a><br/>
+            <img src="" alt="" class="img"/>
+            <p>本游戏适合18岁（含）以上玩家娱乐<br/><span>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当<br/>适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</span></p>
+        </div>
+        <div class="yue"><a href="javaScript:;">阅读更多<span class="zui">最新资讯</span></a></div>
+
+    </div>
+</div>
+<div class="di"><img src="images/di.png" alt=""/></div>
+</body>
+<script>
+    /*获取父div和子div*/
+    var father=document.getElementById('father');
+    var son=document.getElementById('son');
+
+    /*鼠标移入父div时，显示子div*/
+    father.onmouseover=function(){
+        son.style.display='block';
+    };
+
+    /*鼠标移出父div时，显示子div*/
+    son.onmouseout=function(){
+        son.style.display='none';
+    };
+    var father2=document.getElementById('father2');
+    var son2=document.getElementById('son2');
+
+    /*鼠标移入父div时，显示子div*/
+    father2.onmouseover=function(){
+        son2.style.display='block';
+    };
+
+    /*鼠标移出父div时，显示子div*/
+    son2.onmouseout=function(){
+        son2.style.display='none';
+    };
+
+
+    var oBox=document.getElementsByClassName('bo');
+    for(var i=0;i<oBox.length;i++){
+        tab(oBox[i]);
+    }
+
+
+
+    function tab(temp) {
+        var lis=temp.getElementsByTagName('li');
+        var divs=temp.getElementsByTagName('div');
+        for(var i=0;i<lis.length;i++) {
+            lis[i].index = i;
+            lis[i].onmousemove = function () {
+                for (var j = 0; j < lis.length; j++) {
+                    lis[j].className = '';
+                    divs[j].className = '';
+                }
+                this.className = 'on';
+                divs[this.index].className = 'show';
+            };
+        }
+    }
+</script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script src="js/jquery.tabs.js"></script>
+
+<script src="js/jquery.lazyload.js"></script>
+
+<script type="text/javascript">
+
+    $(function(){
+
+
+
+        $("img[original]").lazyload({ placeholder:"images/color3.gif" });
+
+
+
+        $('.demo1').Tabs();
+
+        $('.demo2').Tabs({
+
+            event:'click'
+
+        });
+
+        $('.demo3').Tabs({
+
+            timeout:300
+
+        });
+
+        $('.demo4').Tabs({
+
+            auto:3000
+
+        });
+
+        $('.demo5').Tabs({
+
+            event:'click',
+
+            callback:lazyloadForPart
+
+        });
+
+        //部分区域图片延迟加载
+
+        function lazyloadForPart(container) {
+
+            container.find('img').each(function () {
+
+                var original = $(this).attr("original");
+
+                if (original) {
+
+                    $(this).attr('src', original).removeAttr('original');
+
+                }
+
+            });
+
+        }
+
+    });
+
+</script>
+</html>
